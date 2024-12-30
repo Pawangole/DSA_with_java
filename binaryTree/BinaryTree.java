@@ -18,13 +18,18 @@ public class BinaryTree {
     
     // Method to create the tree
     public static Node createTree(Scanner sc) {
+        System.err.println("enter the val of node");
         int value = sc.nextInt();
 
         if (value == -1) {
             return null;
         } else {
+            //ek case mene kr diya 
             Node root = new Node(value);
+            //baki recursion kr dega
+            System.err.println("adding the node of left of" + value);
             root.left = createTree(sc);
+            System.err.println("adding the node of right of" + value);
             root.right = createTree(sc);
             return root;
         }
@@ -79,11 +84,11 @@ public class BinaryTree {
                 }
             } else {
                 System.out.print(front.data + " ");
-                if (front.left != null) {
-                    q.add(front.left);
-                }
                 if (front.right != null) {
                     q.add(front.right);
+                }
+                if (front.left != null) {
+                    q.add(front.left);
                 }
             }
         }

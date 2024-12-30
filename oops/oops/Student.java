@@ -1,4 +1,4 @@
-package oops.day1;
+package oops;
 
 public class Student {
     int rollNumber;

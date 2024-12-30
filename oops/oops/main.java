@@ -1,4 +1,5 @@
-package oops.day1;
+package oops;
+
 
 public class main {
     public static void main(String[] args) {
